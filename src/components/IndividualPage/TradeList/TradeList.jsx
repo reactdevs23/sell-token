@@ -12,7 +12,7 @@ const TradeList = () => {
   const [filterBysize, setFilterBysize] = useState(false);
   const [size, setSize] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(2);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
   const data = [
     {
       user: {
