@@ -1,0 +1,89 @@
+.modalOverlay {
+  background: rgb(18, 18, 18, 0.48);
+
+  backdrop-filter: blur(12px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1500;
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+
+  z-index: 1501;
+
+  /* my */
+  margin: 0 auto;
+  max-width: 448px;
+  width: 95%;
+  max-height: calc(100vh - 5%);
+
+  height: max-content;
+  overflow-y: auto;
+
+  overflow: auto;
+  border-radius: 8px;
+  background: var(--Primitive-900);
+  box-shadow: 0px -40px 64px -16px rgba(0, 0, 0, 0.2);
+  bottom: 20px;
+
+  padding: 24px;
+  padding-top: 0 !important;
+}
+
+.modalOverlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.active {
+  pointer-events: all;
+  opacity: 1;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--Primitive-800);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--Primitive-900);
+  padding-top: 18px;
+}
+
+.closeButton {
+  margin-left: auto;
+
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.closeIcon {
+  color: var(--Primitive-600);
+  font-size: 28px;
+}
+@media only screen and (max-width: 767px) {
+  .modal {
+    padding: 24px;
+  }
+}

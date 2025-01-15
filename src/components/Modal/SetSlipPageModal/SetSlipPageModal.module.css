@@ -1,0 +1,46 @@
+.inputContainer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 1px solid var(--Primitive-800);
+  padding: 10px 14px;
+  gap: 10px;
+  background: var(--Primitive-950);
+  border-radius: 10px;
+}
+.percent,
+.coinContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 12px;
+  border-left: 1px solid var(--Primitive-800);
+}
+.coinLogo {
+  max-width: 20px;
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.input {
+  width: 100%;
+  text-align: right;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--Primitive-400);
+}
+.input::placeholder {
+  color: var(--Primitive-600);
+}
+.tip {
+  margin-top: 16px;
+}
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding-top: 16px;
+  margin-top: 24px;
+  border-top: 1px solid var(--Primitive-800);
+}

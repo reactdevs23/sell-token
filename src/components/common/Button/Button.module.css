@@ -1,0 +1,75 @@
+.button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  letter-spacing: -0.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 16px;
+
+  background: var(--Primitive-Default);
+  color: var(--Primitive-950);
+  cursor: pointer;
+  white-space: nowrap;
+
+  border-radius: 6px;
+  border: none;
+}
+.radius {
+  border-radius: 24px;
+}
+.base {
+  font-size: 14px;
+}
+.lg {
+  font-size: 18px;
+  padding: 12px 20px;
+}
+.primitive800 {
+  background: var(--Primitive-800);
+  color: var(--Primitive-400);
+}
+.btnPrimary {
+  background: var(--Primitive-Default);
+  color: var(--Primitive-950);
+}
+
+.transparent {
+  background: transparent;
+  color: var(--Primitive-Default);
+  padding: 0;
+}
+.primitiveTransparent8 {
+  background: var(--Primitive-Transparent-8);
+  color: var(--Primitive-Default);
+}
+.wFull {
+  width: 100%;
+}
+.spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+  margin-right: 5px; /* Add some space between the spinner and the text */
+}
+.loading {
+  gap: 8px;
+  opacity: 0.6;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 520px) {
+  .button {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}

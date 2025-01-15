@@ -1,0 +1,115 @@
+.wrapper {
+  position: relative;
+  z-index: 1;
+  background: rgb(99, 234, 113, 0.005);
+}
+.vector {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  max-height: 206px;
+  z-index: -1;
+}
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 95px;
+  position: relative;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.socialContainer {
+  padding: 4px;
+  background: var(--Primitive-950);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+}
+.iconContainer {
+  width: 60px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Primitive-900);
+  cursor: pointer;
+}
+.socialIcon {
+  color: var(--Primitive-400);
+  font-size: 20px;
+  transform: translateY(2px);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding-top: 32px;
+}
+.card {
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.bought {
+  background: rgba(99, 234, 113, 0.08);
+  border: 1px solid rgba(99, 234, 113, 0.08);
+}
+.sold {
+  background: rgba(220, 73, 73, 0.08);
+  border: 1px solid rgba(220, 73, 73, 0.08);
+}
+.created {
+  background: rgba(254, 173, 52, 0.08);
+  border: 1px solid rgba(254, 173, 52, 0.08);
+}
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.font500 {
+  font-weight: 500;
+  color: var(--Primitive-0);
+}
+.userImg {
+  width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cards {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .br {
+    display: none;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .buttonContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

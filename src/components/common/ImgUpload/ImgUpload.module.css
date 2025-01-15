@@ -1,0 +1,18 @@
+.upload {
+  color: var(--Primitive-Default);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.fileInput {
+  display: none;
+}
+.imgUpload {
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: var(--Primitive-800);
+}
+.dragActive {
+  border: 1px dashed var(--Primitive-Default);
+}

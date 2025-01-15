@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--Primitive-900);
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: center;
+  border-bottom: 1px solid var(--Primitive-800);
+  padding-bottom: 12px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spaceBetween {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.id {
+  color: var(--Primitive-300);
+}
+
+.owned {
+  text-align: right;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: var(--Primitive-Default);
+  font-weight: 500;
+  white-space: nowrap;
+}

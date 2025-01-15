@@ -1,0 +1,54 @@
+.tabs {
+  border-radius: 6px;
+  background: var(--Primitive-900);
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+.buySell {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--Primitive-950);
+  border: 1px soilid var(--Primitive-950);
+}
+.tab {
+  color: var(--Primitive-400);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  border-radius: 6px;
+
+  box-shadow: 1px 1px 2px 0px rgba(14, 15, 57, 0.04);
+  padding: 8px 20px;
+  background: transparent;
+  cursor: pointer;
+}
+.tab:hover {
+  transform: translate(0);
+}
+.tab:active {
+  transform: translate(0);
+}
+
+.activeTab {
+  background: var(--Primitive-Default);
+  color: var(--Primitive-950);
+}
+.activeSell.activeTab {
+  background: rgba(220, 73, 73, 0.08);
+  color: var(--Primitive-Error);
+}
+@media only screen and (max-width: 520px) {
+  .type2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .type2 .tab {
+    padding: 6px;
+  }
+  .type2 .tab:last-child {
+    grid-column: 1/-1;
+  }
+}

@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--Primitive-950);
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid var(--Primitive-800);
+  gap: 6px;
+}
+.amountContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+}
+.input {
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--Primitive-400);
+  width: 100%;
+}
+.input::placeholder {
+  color: var(--Primitive-600);
+}
+.setMax {
+  grid-column: 1/-1;
+
+  border-radius: 4px;
+  padding: 4px 6px;
+  width: max-content;
+  margin-left: auto;
+}
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding-top: 16px;
+
+  border-top: 1px solid var(--Primitive-800);
+}
+@media only screen and (max-width: 520px) {
+  .imgUpload {
+    grid-template-columns: 1fr;
+  }
+  .img {
+    order: -1;
+    margin: 0 auto;
+    width: 100px;
+  }
+}

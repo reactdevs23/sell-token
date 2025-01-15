@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.imgUpload {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+}
+
+.img {
+  width: 64px;
+  height: 100%;
+  border-radius: 6px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding-top: 16px;
+
+  border-top: 1px solid var(--Primitive-800);
+}
+@media only screen and (max-width: 520px) {
+  .imgUpload {
+    grid-template-columns: 1fr;
+  }
+  .img {
+    order: -1;
+    margin: 0 auto;
+    width: 100px;
+  }
+}

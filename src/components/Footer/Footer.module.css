@@ -1,0 +1,33 @@
+.wrapper {
+  background: var(--Primitive-950);
+  border-top: 1px solid var(--Primitive-800);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 24px 0;
+}
+.linkContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.link {
+  color: var(--Primitive-400);
+}
+.seperator {
+  width: 1px;
+  height: 10px;
+  background: var(--Primitive-800);
+}
+.supportButton {
+  border-radius: 20px;
+  min-width: 100px;
+}
+@media only screen and (max-width: 991px) {
+  .footer {
+    flex-direction: column;
+  }
+}

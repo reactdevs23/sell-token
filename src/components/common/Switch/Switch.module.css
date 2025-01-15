@@ -1,0 +1,46 @@
+.switch {
+  width: 50px;
+  height: 26px;
+  border-radius: 34px;
+  background-color: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.switch.checked {
+  background-color: #187bfc;
+}
+
+.slider {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--Primitive-0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  transform: translateX(1px);
+  left: 0;
+
+  transition: 0.3s ease;
+}
+
+.switch.checked .slider {
+  transform: translateX(24px);
+}
+
+.icon {
+  font-size: 12px;
+  color: #187bfc;
+  transition: 0.3s ease;
+}
+
+.switch:not(.checked) .icon {
+  color: var(--Primitive-600);
+  opacity: 0.8;
+}

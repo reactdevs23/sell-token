@@ -1,0 +1,86 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+
+  gap: 12px;
+}
+.leftSide,
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+.chartContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.userInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.userImg {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  max-width: 48px;
+  width: 100%;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.nickName {
+  color: var(--Primitive-400);
+  font-size: 14px;
+}
+.creatorContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.creatorImg {
+  max-width: 20px;
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+@media only screen and (max-width: 1199px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .rightSide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .rightSide {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tabs .button {
+    font-size: 14px;
+  }
+}

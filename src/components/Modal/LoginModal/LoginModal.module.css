@@ -1,0 +1,46 @@
+.form {
+  border-bottom: 1px solid var(--Primitive-800);
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button {
+  border-radius: 6px;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--Primitive-950);
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--Primitive-800);
+}
+.input {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+.input input {
+  text-align: right;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.logo {
+  max-width: 20px;
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+@media only screen and (max-width: 380px) {
+  .buttonContainer button {
+    padding: 10px 12px;
+  }
+}

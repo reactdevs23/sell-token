@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import TradingChart from "./components/IndividualPage/TradingChart/TradingChart";
+import PostThread from "./components/IndividualPage/PostThread/PostThread";
+import IndividualPage from "./pages/IndividualPage/IndividualPage";
+import LaunchNewCoin from "./pages/LaunchNewCoin/LaunchNewCoin";
+import ProfilePage from "pages/ProfilePage/ProfilePage";
+import Footer from "components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/individual-page" element={<IndividualPage />} />
+        <Route path="/launch-coin" element={<LaunchNewCoin />} />
+        <Route path="/profile-page" element={<ProfilePage />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

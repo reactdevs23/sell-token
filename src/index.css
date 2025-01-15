@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --Primitive-Default: #63ea71;
+  --Primitive-Transparent-8: rgb(99, 234, 113, 0.08);
+  --Primitive-Warning: #fead34;
+  --Primitive-Error: #dc4949;
+  --Primitive-0: #fff;
+  --Primitive-50: #f1f1f1;
+  --Primitive-100: #e5e5e5;
+  --Primitive-200: #d6d6d6;
+  --Primitive-300: #c6c6c6;
+  --Primitive-400: #a2a2a2;
+  --Primitive-500: #7a7a7a;
+  --Primitive-600: #525252;
+  /* --Primitive-700: #525252; */
+  --Primitive-800: #222;
+  --Primitive-900: #1a1a1a;
+  --Primitive-950: #121212;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Primitive-950);
+  white-space: normal;
+}
+button {
+  transition: 0.3s;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+button:hover {
+  transform: translateY(-3px);
+}
+
+.container {
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.highlight {
+  color: var(--Primitive-Default);
+  font-weight: 500;
+}
+.spaceFromTop {
+  margin-top: 95px;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--Primitive-600);
+  border-radius: 4px;
+}
+.overflow {
+  scrollbar-width: thin;
+  scrollbar-color: var(--Primitive-600) rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+}
+
+/* Chrome, Edge, and Safari browsers */
+.overflow::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 5px;
+}
+.overflow::-webkit-scrollbar-track {
+  background: rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  background: var(--Primitive-600);
+  border-radius: 100vh;
+  border: none;
+  border-radius: 5px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::placeholder {
+  color: var(--Primitive-600);
 }

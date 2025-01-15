@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+}
+.dateInput {
+  width: 100%;
+}
+.inputField {
+  display: none;
+}
+.label {
+  white-space: nowrap;
+}
+.customInput {
+  color: var(--Primitive-400);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  padding: 12px 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--Primitive-900);
+}
+.icon {
+  cursor: pointer;
+  color: var(--Base-70);
+  font-size: 18;
+}
+.arrow {
+  font-size: 14px;
+  color: var(--Primitive-400);
+  cursor: pointer;
+  margin-left: auto;
+}

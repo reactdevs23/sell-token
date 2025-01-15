@@ -1,0 +1,89 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--Primitive-900);
+  border-radius: 12px;
+  padding: 16px;
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 95px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.userImg {
+  max-width: 44px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.copyContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  border: 1px solid var(--Primitive-800);
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--Primitive-950);
+}
+.address {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 190px;
+}
+.copyButton {
+  cursor: pointer;
+  margin-left: auto;
+  cursor: pointer;
+}
+.copyIcon {
+  color: var(--Primitive-600);
+  font-size: 18px;
+}
+.checkIcon {
+  color: var(--Primitive-Default);
+  font-size: 18px;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--Primitive-800);
+  border-radius: 8px;
+  padding: 8px;
+}
+.spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--Primitive-800);
+  padding: 4px 0;
+}
+.spaceBetween:last-child {
+  border: none;
+}
+.value {
+  margin-left: auto;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    position: static;
+  }
+}

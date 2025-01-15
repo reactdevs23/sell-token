@@ -1,0 +1,119 @@
+.main {
+  position: relative;
+  position: relative;
+  z-index: 1;
+  background: rgb(99, 234, 113, 0.005);
+}
+
+.vector {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  max-height: 206px;
+  z-index: -1;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 50px 0;
+  max-width: 440px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--Primitive-900);
+  border-radius: 12px;
+  padding: 16px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.selectBlockChain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dropdown {
+  margin-left: auto;
+}
+.input {
+  background: var(--Primitive-950);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+}
+.input input {
+  font-size: 16px;
+}
+.telegramInput,
+.perbuy {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.twitterInput,
+.toEarnOnLaunch {
+  border-radius: 0;
+}
+.tiktokInput,
+.airdrops {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.textArea {
+  border-radius: 0;
+  background: var(--Primitive-950);
+}
+.imgUploading {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.socialIcon {
+  font-size: 18px;
+  color: var(--Primitive-400);
+}
+.airdrops {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  border-right: 1px solid var(--Primitive-800);
+  padding-right: 16px;
+}
+.airDropsWrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  border: 1px solid var(--Primitive-800);
+  padding: 10px 16px;
+  border-radius: 0 0 12px 12px;
+  background: var(--Primitive-950);
+}
+.setMax {
+  grid-column: 1/-1;
+
+  border-radius: 4px;
+  padding: 4px 6px;
+  width: max-content;
+  margin-left: auto;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 12px;
+  }
+}

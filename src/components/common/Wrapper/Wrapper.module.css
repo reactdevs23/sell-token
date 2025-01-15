@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 96px 0cqi;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media only screen and (max-width: 1280px) {
+  .wrapper {
+    padding: 70px 0px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .wrapper {
+    padding: 60px 0px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 24px 0;
+  }
+}

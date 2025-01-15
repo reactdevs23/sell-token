@@ -1,0 +1,123 @@
+.card {
+  border-radius: 12px;
+  padding: 20px;
+  background: var(--Primitive-900);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: flex-start;
+  gap: 12px;
+  border-bottom: 1px solid var(--Primitive-800);
+  padding-bottom: 12px;
+}
+.moreButton {
+  padding: 4px;
+  font-size: 18px;
+}
+.logo {
+  max-width: 48px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.keyValue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.value {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.img {
+  max-width: 20px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.marketInfo {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4px;
+}
+.marketCap,
+.buy,
+.sell {
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.marketCap {
+  background: var(--Primitive-800);
+}
+.buy {
+  background: rgba(99, 234, 113, 0.08);
+}
+.sell {
+  background: rgba(220, 73, 73, 0.08);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.lauchDate {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.socialContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+.iconContainer {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  color: var(--Primitive-400);
+  font-size: 18px;
+}
+@media only screen and (max-width: 520px) {
+  .card {
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .marketInfo {
+    grid-template-columns: 1fr 1fr;
+  }
+  .marketCap {
+    grid-column: 1/-1;
+  }
+  .logo {
+    max-width: 36px;
+  }
+}

@@ -1,0 +1,95 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: var(--Primitive-900);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.wrapper .tab {
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--Primitive-950);
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid var(--Primitive-800);
+
+  gap: 6px;
+}
+.inputContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.input {
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--Primitive-400);
+  width: 100%;
+}
+.input::placeholder {
+  color: var(--Primitive-600);
+}
+.coinContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 12px;
+  border-left: 1px solid var(--Primitive-800);
+}
+.coinLogo {
+  max-width: 20px;
+  width: 100%;
+  border-radius: 50%;
+}
+.balance {
+  text-align: right;
+  margin-left: auto;
+}
+.balanceLabel {
+  color: var(--Primitive-500);
+  font-weight: 400;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  gap: 6px;
+  padding: 12px;
+  background: var(--Primitive-800);
+}
+.value {
+  margin-left: auto;
+}
+.sellButton {
+  background: var(--Primitive-Error);
+  color: var(--Primitive-0);
+}
+.buyButton {
+  background: #4cb266;
+  color: var(--Primitive-0);
+}

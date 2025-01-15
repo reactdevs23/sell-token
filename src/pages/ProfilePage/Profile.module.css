@@ -1,0 +1,68 @@
+.main {
+  position: relative;
+  position: relative;
+  z-index: 1;
+  background: rgb(99, 234, 113, 0.005);
+}
+
+.vector {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  max-height: 206px;
+  z-index: -1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  gap: 24px;
+  align-items: flex-start;
+}
+.myCoins {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.coins {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 1024px) {
+  .coins {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .coins {
+    width: 100%;
+  }
+
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 520px) {
+  .container .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .container .tabs button:last-child {
+    grid-column: 1/-1;
+  }
+}
